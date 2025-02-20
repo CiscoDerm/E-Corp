@@ -1,8 +1,8 @@
 # 🛡️ Projet Bachelor Cybersécurité S3 : Mise en place d'un réseau pour une PME
 
 ## 📅 Année : 2024/2025
-**Responsable :** ********
-**Date de soutenance :** Début février  
+**Responsable :** Dieu 
+**Date de soutenance :** Début Mars
 
 ---
 
@@ -91,6 +91,3 @@
 - **E Corp** : Elohyrr, Cisco, L2, Golem.
 
 ---
-
-## 📩 Questions ?
-Merci et bonne chance pour vos projets ! 💪
