@@ -1,5 +1,17 @@
 # 📘 Création des Utilisateurs et Groupes dans Active Directory (Windows Server 2019) - Projet **ECORP** 🚀
 
+## 📖 Sommaire
+1. ✅ [Prérequis](#-1-prérequis)
+2. 🏗️ [Création des Groupes](#-2-création-des-groupes)
+   - 🎯 [Accéder à Active Directory Users and Computers](#-accéder-à-active-directory-users-and-computers)
+   - 📂 [Groupes à Créer](#-groupes-à-créer)
+3. 🆕 [Création des Utilisateurs](#-3-création-des-utilisateurs)
+   - 📜 [Utilisateurs à Créer](#-utilisateurs-à-créer)
+4. 🔗 [Ajout des Utilisateurs aux Groupes](#-4-ajout-des-utilisateurs-aux-groupes)
+5. 🔍 [Vérification des Utilisateurs et Groupes](#-6-vérification-des-utilisateurs-et-groupes)
+
+---
+
 ## ✅ 1. Prérequis
 - 🖥️ Un serveur **Windows Server 2019** configuré en tant que **Contrôleur de Domaine**.
 - 🛠️ L'outil **Active Directory Users and Computers** (**ADUC**) installé.
@@ -72,8 +84,4 @@ Get-ADGroupMember -Identity "SSI"
 Get-ADUser -Identity "r.rouge"
 ```
 
----
-
-## 🎯 7. Conclusion
-Cette documentation explique comment **créer des utilisateurs et des groupes** dans **Active Directory** sur **Windows Server 2019** pour notre projet **ECORP** 🌍. 
 
