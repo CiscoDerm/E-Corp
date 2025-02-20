@@ -1,4 +1,4 @@
-# Documentation : Création des utilisateurs et groupes dans Active Directory (Windows Server 2019)
+Création des utilisateurs et groupes dans Active Directory (Windows Server 2019)
 
 ## 1. Prérequis
 - Un serveur Windows Server 2019 configuré en tant que Contrôleur de Domaine.
