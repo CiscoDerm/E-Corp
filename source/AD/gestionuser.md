@@ -69,7 +69,7 @@
 
 ---
 
-## 🔍 6. Vérification des Utilisateurs et Groupes
+## 🔍 5. Vérification des Utilisateurs et Groupes
 - Utiliser la commande **PowerShell** suivante pour lister les utilisateurs d'un groupe :
 
 ```powershell
