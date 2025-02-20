@@ -12,6 +12,8 @@
 
 ---
 
+uwu
+
 ## ✅ 1. Prérequis
 - 🖥️ Un serveur **Windows Server 2019** configuré en tant que **Contrôleur de Domaine**.
 - 🛠️ L'outil **Active Directory Users and Computers** (**ADUC**) installé.
