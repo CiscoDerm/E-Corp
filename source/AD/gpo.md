@@ -1,4 +1,14 @@
 # 🔐 Création et Application des GPO dans Active Directory (Windows Server 2019) - Projet **ECORP** 🚀
+---
+
+📖 Sommaire
+1.✅ Prérequis
+2.📜 Création des GPO
+3.⚙️ Configuration des GPO Principales
+5.🔍 Vérification des GPO Appliquées
+5.🎯 Conclusion
+
+---
 
 ## ✅ 1. Prérequis
 - 🖥️ Un serveur **Windows Server 2019** configuré en tant que **Contrôleur de Domaine**.
