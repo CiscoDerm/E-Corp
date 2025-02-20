@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - '*'
-
   pull_request:
     branches:
       - main
@@ -31,15 +30,24 @@ jobs:
         id: build
         run: |
           echo "🛠️ Checking MkDocs build..."
-          mkdocs build > mkdocs_log.txt 2>&1 || echo "BUILD_FAILED=1" >> $GITHUB_ENV
+          mkdocs build | tee mkdocs_log.txt || echo "BUILD_FAILED=1" >> $GITHUB_ENV
 
       - name: 📖 Show MkDocs Logs
         run: cat mkdocs_log.txt || true
 
+      - name: ⚠️ Check Log Length
+        id: log_length
+        run: |
+          LOG_LINES=$(wc -l < mkdocs_log.txt)
+          if [ "$LOG_LINES" -gt 3 ]; then
+            echo "⚠️ MkDocs generated unexpected output! ($LOG_LINES lines)"
+            echo "HAS_WARNINGS=1" >> $GITHUB_ENV
+          fi
+
       - name: ❗ Detect Warnings
         id: warnings
         run: |
-          if grep -q "WARNING" mkdocs_log.txt; then
+          if grep -i "WARNING" mkdocs_log.txt; then
             echo "⚠️ MkDocs built with warnings!"
             echo "HAS_WARNINGS=1" >> $GITHUB_ENV
           fi
@@ -51,7 +59,7 @@ jobs:
           exit 1
 
       - name: ✅ Success Message
-        if: env.BUILD_FAILED != '1'
+        if: env.BUILD_FAILED != '1' && env.HAS_WARNINGS != '1'
         run: echo "✅ MkDocs build passed!"
 
       - name: ⚠️ Post Warning if Needed
