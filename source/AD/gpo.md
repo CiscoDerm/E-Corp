@@ -88,27 +88,6 @@
 
 ---
 
-## ⚡ 4. Automatisation avec PowerShell
-
-Pour automatiser la création et l'application des GPO, utiliser le script suivant :
-
-```powershell
-$GPOs = @(
-    @{Name="PolitiqueMotDePasse"; Path="Account Policies/Password Policy"},
-    @{Name="VerrouillageCompte"; Path="Account Lockout Policy"},
-    @{Name="RestrictionLogiciels"; Path="Windows Installer"},
-    @{Name="WindowsUpdate"; Path="Windows Update"},
-    @{Name="BlocageRegistre"; Path="System"},
-    @{Name="InterdictionCMD"; Path="System"}
-)
-
-foreach ($gpo in $GPOs) {
-    New-GPO -Name $gpo.Name | New-GPLink -Target "OU=Employes,DC=ecorp,DC=local"
-}
-```
-
----
-
 ## 🔍 5. Vérification des GPO Appliquées
 - 📌 Pour voir les GPO appliquées à un utilisateur :
 
@@ -126,6 +105,3 @@ Get-GPO -All
 
 ## 🎯 6. Conclusion
 Cette documentation détaille la **création et l'application des GPO** pour **ECORP** 🏢. 
-
-🛠️ **Que ce soit via GPMC ou PowerShell, ces GPO assurent une meilleure gestion et sécurité des postes utilisateurs.** 🚀
-
