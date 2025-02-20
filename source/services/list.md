@@ -3,9 +3,9 @@
 ---
 
 ## 📖 Sommaire
-1. 🖥️ [Machines Virtuelles (VM) sur Proxmox](#-1-machines-virtuelles-vm-sur-proxmox)
-2. 📦 [Containers LXC sur Proxmox](#-2-containers-lxc-sur-proxmox)
-3. 🐳 [Serveur Debian avec Docker](#-3-serveur-debian-avec-docker)
+1. 🖥️ [Machines Virtuelles (VM) sur Proxmox](#1-machines-virtuelles-vm-sur-proxmox)
+2. 📦 [Containers LXC sur Proxmox](#2-containers-lxc-sur-proxmox)
+3. 🐳 [Serveur Debian avec Docker](#3-serveur-debian-avec-docker)
 
 ---
 

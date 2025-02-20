@@ -4,11 +4,11 @@
 ---
 
 ## 📖 Sommaire
-1. ✅ [Prérequis](#-1-prérequis)
-2. 📜 [Création des GPO](#-2-création-des-gpo)
-3. ⚙️ [Configuration des GPO Principales](#-3-configuration-des-gpo-principales)
-4. 🔍 [Vérification des GPO Appliquées](#-5-vérification-des-gpo-appliquées)
-5. 🎯 [Conclusion](#-6-conclusion)
+1. ✅ [Prérequis](#1-prerequis)
+2. 📜 [Création des GPO](#2-creation-des-gpo)
+3. ⚙️ [Configuration des GPO Principales](#3-configuration-des-gpo-principales-au-sein-de-ecorp)
+4. 🔍 [Vérification des GPO Appliquées](#5-verification-des-gpo-appliquees)
+5. 🎯 [Conclusion](#6-conclusion)
 
 ---
 
