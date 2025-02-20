@@ -11,4 +11,3 @@ Voici la liste des services actuellement sur ton **Proxmox** :
 2. **Container GLPI** (gestion des tickets et parc informatique)  
 3. **Container NextCloud** (solution de stockage et partage de fichiers)  
 
-Si tu veux une documentation détaillée avec IP, configurations ou autres précisions, dis-moi ! 🚀
