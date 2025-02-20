@@ -54,7 +54,3 @@ access-list 100 permit ip any any
 2. **Tester l'assignation des ports** : Vérifier que chaque VLAN est bien isolé selon la configuration définie.
 3. **Tester les ACLs** : Vérifier que les restrictions d'accès sont bien appliquées.
 4. **Monitorer le trafic** : Utiliser des outils comme `tcpdump` ou `Wireshark` pour analyser le trafic réseau.
-
-## Conclusion
-Cette configuration permet une segmentation efficace du réseau, améliore la sécurité et optimise l'utilisation des ressources. La mise en place des VLANs doit être suivie de tests réguliers pour garantir leur bon fonctionnement et éviter toute faille de sécurité.
-
