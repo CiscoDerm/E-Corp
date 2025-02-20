@@ -15,8 +15,10 @@ nav:
           - Node Exporter: services/monitoring/node_exporter.md
       - Portainer: services/portainer.md
       - Traefik: services/traefik.md
+      - Dell: services/dell_ipmi.md
+      - Liste: services/list.md
   - Active Directory:
-      - Créer user: AD/gestionuser.md
+      - Gestion des users: AD/gestionuser.md
       - GPO: AD/gpo.md
       - Serveur de Fichier: AD/fileserver.md
       - DNS: AD/dns.md

@@ -3,11 +3,11 @@
 ---
 
 ## 📖 Sommaire
-1. 🎯 [Introduction](#-1-introduction)
-2. 📌 [Table des VLANs](#-2-table-des-vlans)
-3. ⚙️ [Configuration du Switch Netgear](#-3-configuration-du-switch-netgear)
-4. 🔒 [Sécurisation des VLANs](#-4-sécurisation-des-vlans)
-5. ✅ [Tests et Validation](#-5-tests-et-validation)
+1. 🎯 [Introduction](#1-introduction)
+2. 📌 [Table des VLANs](#2-table-des-vlans)
+3. ⚙️ [Configuration du Switch Netgear](#3-configuration-du-switch-netgear)
+4. 🔒 [Sécurisation des VLANs](#4-securisation-des-vlans)
+5. ✅ [Tests et Validation](#5-tests-et-validation)
 
 ---
 

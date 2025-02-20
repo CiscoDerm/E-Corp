@@ -3,11 +3,11 @@
 ---
 
 ## 📖 Sommaire
-1. ✅ [Prérequis](#-1-prérequis)
-2. 🔗 [Test de Connexion IPMI](#-2-test-de-connexion-ipmi)
-3. ⚙️ [Contrôle Manuel des Ventilateurs](#-3-contrôle-manuel-des-ventilateurs)
-4. 🚨 [Bonnes Pratiques et Surveillance](#-4-bonnes-pratiques-et-surveillance)
-5. 🛠️ [Dépannage](#-5-dépannage)
+1. ✅ [Prérequis](#1-prerequis)
+2. 🔗 [Test de Connexion IPMI](#2-test-de-connexion-ipmi)
+3. ⚙️ [Contrôle Manuel des Ventilateurs](#3-controle-manuel-des-ventilateurs)
+4. 🚨 [Bonnes Pratiques et Surveillance](#4-bonnes-pratiques-et-surveillance)
+5. 🛠️ [Dépannage](#5-depannage)
 
 ---
 

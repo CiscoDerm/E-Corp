@@ -3,14 +3,15 @@
 ---
 
 ## 📖 Sommaire
-1. 🎯 [Introduction](#-1-introduction)
-2. 📌 [Table des VLANs](#-2-table-des-vlans)
-3. ⚙️ [Configuration des VLANs](#-3-configuration-des-vlans)
-   - 🖥️ [Via OpenWRT (Routeur Linksys)](#-31-configuration-des-vlans-via-openwrt-routeur-linksys)
-   - 🏢 [Via le Switch Netgear](#-32-configuration-du-switch-netgear)
-4. 🔒 [Sécurisation des VLANs](#-4-sécurisation-des-vlans)
-5. ✅ [Tests et Validation](#-5-tests-et-validation)
-6. 🎯 [Conclusion](#-6-conclusion)
+1. 🎯 [Introduction](#1-introduction)
+2. 📌 [Table des VLANs](#2-table-des-vlans)
+3. ⚙️ [Configuration des VLANs](#3-configuration-des-vlans)
+   - 🖥️ [Via OpenWRT (Routeur Linksys)](#31-configuration-des-vlans-via-openwrt-routeur-linksys)
+   - 🏢 [Via le Switch Netgear](#32-configuration-du-switch-netgear)
+   -  [Attribution des IP et DHCP](#33-attribution-des-adresses-ip-et-dhcp)
+4. 🔒 [Sécurisation des VLANs](#4-securisation-des-vlans)
+5. ✅ [Tests et Validation](#5-tests-et-validation)
+6. 🎯 [Conclusion](#6-conclusion)
 
 ---
 
@@ -40,7 +41,7 @@ L'objectif de cette documentation est de détailler la **configuration des VLANs
 4. 🖥️ **Affecter les ports** selon la configuration souhaitée.
 5. 💾 **Sauvegarder et appliquer** les modifications.
 
-### 🏢 3.2 Configuration du Switch Netgear (IP : 192.168.0.115)
+### 🏢 3.2 Configuration du Switch Netgear
 
 #### 📌 Attribution Physique des Ports
 - **VLAN ADMIN** : Ports en bas à gauche.

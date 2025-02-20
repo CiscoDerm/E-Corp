@@ -1,14 +1,14 @@
 # 📘 Création des Utilisateurs et Groupes dans Active Directory (Windows Server 2019) - Projet **ECORP** 🚀
 
 ## 📖 Sommaire
-1. ✅ [Prérequis](#-1-prérequis)
-2. 🏗️ [Création des Groupes](#-2-création-des-groupes)
-   - 🎯 [Accéder à Active Directory Users and Computers](#-accéder-à-active-directory-users-and-computers)
-   - 📂 [Groupes à Créer](#-groupes-à-créer)
-3. 🆕 [Création des Utilisateurs](#-3-création-des-utilisateurs)
-   - 📜 [Utilisateurs à Créer](#-utilisateurs-à-créer)
-4. 🔗 [Ajout des Utilisateurs aux Groupes](#-4-ajout-des-utilisateurs-aux-groupes)
-5. 🔍 [Vérification des Utilisateurs et Groupes](#-6-vérification-des-utilisateurs-et-groupes)
+1. ✅ [Prérequis](#1-prerequis)
+2. 🏗️ [Création des Groupes](#2-creation-des-groupes)
+   - 🎯 [Accéder à Active Directory Users and Computers](#acceder-a-active-directory-users-and-computers)
+   - 📂 [Groupes à Créer](#groupes-a-creer)
+3. 🆕 [Création des Utilisateurs](#3-creation-des-utilisateurs)
+   - 📜 [Utilisateurs à Créer](#utilisateurs-a-creer)
+4. 🔗 [Ajout des Utilisateurs aux Groupes](#4-ajout-des-utilisateurs-aux-groupes)
+5. 🔍 [Vérification des Utilisateurs et Groupes](#5-verification-des-utilisateurs-et-groupes)
 
 ---
 
