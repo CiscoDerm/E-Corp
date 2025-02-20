@@ -1,7 +1,7 @@
 # 🔐 Création et Application des GPO dans Active Directory (Windows Server 2019) - Projet **ECORP** 🚀
 ---
 
-📖 Sommaire
+## 📖 Sommaire
 1.✅ Prérequis
 2.📜 Création des GPO
 3.⚙️ Configuration des GPO Principales
