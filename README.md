@@ -1,8 +1,8 @@
 # 🛡️ Projet Bachelor Cybersécurité S3 : Mise en place d'un réseau pour une PME
 
 ## 📅 Année : 2024/2025
-**Responsable :** Dieu 
-**Date de soutenance :** Début Mars
+-**Responsable :** Dieu 
+-**Date de soutenance :** Début Mars
 
 ---
 
