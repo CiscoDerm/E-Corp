@@ -1,166 +1,137 @@
-# Utiliser et contribuer à la DOC
-
-## 1. Introduction
-MkDocs est un générateur de documentation statique simple et puissant écrit en Python. Cette documentation vous guidera à travers l'installation de MkDocs sur Linux et Windows, en partant de zéro.
+# 📘 Utiliser et Contribuer à la Documentation
 
 ---
 
-## 2. Prérequis
-Avant d'installer MkDocs, assurez-vous d'avoir installé **Git**, **Python** et **pip** (le gestionnaire de paquets Python).
+## 📖 Sommaire
+1. 🎯 [Introduction](#-1-introduction)
+2. ✅ [Prérequis](#-2-prérequis)
+   - 🛠️ [Installation de Git](#-21-installation-de-git)
+   - 🐍 [Installation de Python et pip](#-22-installation-de-python-et-pip)
+3. ⚙️ [Installation de MkDocs](#-3-installation-de-mkdocs)
+4. 🔄 [Utilisation de Git](#-4-utilisation-de-git)
+5. 🚀 [Test rapide de MkDocs](#-5-test-rapide-de-mkdocs)
+6. 🎯 [Conclusion](#-6-conclusion)
 
-### Installation de Git
+---
 
-#### Sous Linux
-1. **Mettre à jour le système** :
-   ```sh
-   sudo apt update && sudo apt upgrade -y
-   ```
-2. **Installer Git** :
-   ```sh
-   sudo apt install git -y
-   ```
-3. **Vérifier l'installation** :
+## 🎯 1. Introduction
+**MkDocs** est un générateur de documentation statique simple et puissant écrit en **Python**. Cette documentation vous guidera à travers l'installation de **MkDocs** sur **Linux** et **Windows**, ainsi que son utilisation et contribution via **Git**. 🚀
+
+---
+
+## ✅ 2. Prérequis
+Avant d'installer **MkDocs**, assurez-vous d'avoir installé **Git**, **Python** et **pip**.
+
+### 🛠️ 2.1 Installation de Git
+
+#### 🔹 Sous Linux
+```sh
+sudo apt update && sudo apt upgrade -y
+sudo apt install git -y
+git --version
+```
+
+#### 🔹 Sous Windows
+1. Téléchargez et installez [Git](https://git-scm.com/downloads)
+2. Vérifiez l'installation :
    ```sh
    git --version
    ```
 
-#### Sous Windows
-1. **Télécharger Git** :
-   - Rendez-vous sur : [https://git-scm.com/downloads](https://git-scm.com/downloads)
-   - Téléchargez et installez la version correspondant à votre système.
-   - Lors de l'installation, sélectionnez tout par défaut
-2. **Vérifier l'installation** :
-   - Ouvrez une invite de commande et tapez :
-     ```sh
-     git --version
-     ```
+### 🔧 2.2 Configurer Git
+```sh
+git config --global user.email "email.used@for.github"
+git config --global user.name "githubuser"
+```
 
+### 🐍 2.3 Vérification et Installation de Python et pip
 
-## 3. Configurer git
-1. **Configurer son email**
-     ```sh
-     git config --global user.email "email.used@for.github
-     git config --global user.name "githubuser"
-     ```
-
-### Vérifier si Python est déjà installé
-Exécutez la commande suivante dans un terminal (Linux) ou l'invite de commande (Windows) :
+#### 🔹 Vérification de Python
 ```sh
 python --version
-```
-Ou :
-```sh
 python3 --version
 ```
-Si Python n'est pas installé, suivez les étapes ci-dessous.
 
----
+#### 🔹 Installation de Python et pip
+##### Sous Linux
+```sh
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3 python3-pip -y
+python3 --version
+pip3 --version
+```
 
-## 4. Installation de Python et pip
-
-### 4.1 Sous Linux
-1. **Mettre à jour le système** :
+##### Sous Windows
+1. Téléchargez et installez [Python](https://www.python.org/downloads/)
+2. Cochez **"Add Python to PATH"** lors de l'installation
+3. Vérifiez l'installation :
    ```sh
-   sudo apt update && sudo apt upgrade -y
+   python --version
+   pip --version
    ```
-2. **Installer Python et pip** :
+4. Mettez à jour pip :
    ```sh
-   sudo apt install python3 python3-pip -y
-   ```
-3. **Vérifier l'installation** :
-   ```sh
-   python3 --version
-   pip3 --version
-   ```
-
-### 4.2 Sous Windows
-1. **Télécharger Python** :
-   - Rendez-vous sur le site officiel : [https://www.python.org/downloads/](https://www.python.org/downloads/)
-   - Téléchargez et installez la dernière version de Python.
-   - Lors de l'installation, **cochez la case "Add Python to PATH"**.
-2. **Vérifier l'installation** :
-   - Ouvrez l'invite de commande et tapez :
-     ```sh
-     python --version
-     pip --version
-     ```
-3. **Mettre à jour pip**
-   - Lancer l'invite de commande et tapez:
-     ```sh
-     python -m pip install --upgrade pip
-     ```
-
----
-
-## 5. Installation de MkDocs
-
-### 5.1 Sous Linux
-1. **Installer MkDocs avec pip** :
-   ```sh
-   pip3 install mkdocs
-   ```
-2. **Vérifier l'installation** :
-   ```sh
-   mkdocs --version
-   ```
-
-### 5.2 Sous Windows
-1. **Installer MkDocs avec pip** :
-   ```sh
-   pip install mkdocs
-   ```
-2. **Vérifier l'installation** :
-   ```sh
-   mkdocs --version
+   python -m pip install --upgrade pip
    ```
 
 ---
 
-## 6. Utilisation de Git
+## ⚙️ 3. Installation de MkDocs
 
-### Initialiser le projet et le cloner
-1. **Ajouter le dépôt distant et le cloner** :
-   ```sh
-   # sur github
-   git clone https://github.com/CiscoDerm/E-Corp.git
-   # sur notre infra
-   git clone https://gitlab.ecorp.ad/root/documentation.git
-   ```
+### 🔹 Sous Linux
+```sh
+pip3 install mkdocs
+mkdocs --version
+```
 
-### Contribuer à notre doc
+### 🔹 Sous Windows
+```sh
+pip install mkdocs
+mkdocs --version
+```
+
+---
+
+## 🔄 4. Utilisation de Git
+
+### 🖥️ Cloner le projet
+```sh
+git clone https://github.com/CiscoDerm/E-Corp.git
+```
+
+### ✏️ Contribuer à la documentation
 1. **Créer une nouvelle branche** :
    ```sh
    git checkout -b feat/ma-branche
    ```
-2. **Après avoir fait des modifications et les avoir validé (étape 6)**  les ajouter et commit :
+2. **Ajouter et commit ses modifications** :
    ```sh
    git add .
    git commit -m "feat: Ajout de l'ad"
    ```
-3. **Pousser les modifications sur la branche distante** :
+3. **Pousser les modifications** :
    ```sh
    git push origin feat/ma-branche
    ```
-4. **Créer une merge request (Pull Request)** :
-   - Aller sur GitHub/GitLab et ouvrir une Merge Request (Pull Request) vers la branche `main`.
-   - Attendre la validation avant de fusionner.
+4. **Créer une merge request (Pull Request)** sur GitHub/GitLab.
 
 ---
 
-## 7. Test rapide de MkDocs
-1. **Aller dans la racine du projet** :
+## 🚀 5. Test rapide de MkDocs
+
+1. **Aller dans le dossier du projet** :
    ```sh
    cd E-corp
    ```
-2. **Lancer le serveur local de documentation** :
+2. **Lancer le serveur local** :
    ```sh
    mkdocs serve
    ```
-4. **Ouvrir dans un navigateur** :
-   - Allez sur : [http://127.0.0.1:8000](http://localhost:8000)
+3. **Ouvrir dans un navigateur** :
+   [http://127.0.0.1:8000](http://localhost:8000)
 
 ---
 
-## 8. Conclusion
-Vous avez maintenant MkDocs installé et prêt à l'emploi sur Linux et Windows ! Vous savez également comment utiliser Git pour contribuer à un projet et gérer vos modifications efficacement. 🚀
+## 🎯 6. Conclusion
+Vous avez maintenant **MkDocs** installé et prêt à l'emploi sur **Linux** et **Windows** ! Vous savez également comment utiliser **Git** pour contribuer à un projet et gérer vos modifications efficacement. 🚀
 
