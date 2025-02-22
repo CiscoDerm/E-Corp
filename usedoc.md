@@ -112,6 +112,7 @@ git clone https://github.com/CiscoDerm/E-Corp.git
    ```
    *Note* : Faites des commits pour chaque modification logique. Par exemple, si vous ajoutez plusieurs pages, vérifiez que tout fonctionne avant de commit. Vous pouvez faire autant de commits que vous voulez dans votre branche. Une fois votre ajout finalisé et testé, faites une **Pull Request** vers `main`.
 
+> note : *Si vous ajouter un fichier, n'oublier pas de rajouter le chemin dans le fichier `mkdocs.yml`*
 3. **Pousser les modifications** :
    ```sh
    git push origin feat/ma-branche
