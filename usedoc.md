@@ -101,19 +101,56 @@ git clone https://github.com/CiscoDerm/E-Corp.git
 
 ### ✏️ Contribuer à la documentation
 1. **Créer une nouvelle branche** :
+   Il est important de créer et d'aller sur la nouvelle branche avant toute modification. Sinon, si vous changez de branche après avoir modifié des fichiers, vous risquez de perdre vos changements.
    ```sh
    git checkout -b feat/ma-branche
    ```
 2. **Ajouter et commit ses modifications** :
    ```sh
    git add .
-   git commit -m "feat: Ajout de l'ad"
+   git commit -m "feat: Ajout de l'AD"
    ```
+   *Note* : Faites des commits pour chaque modification logique. Par exemple, si vous ajoutez plusieurs pages, vérifiez que tout fonctionne avant de commit. Vous pouvez faire autant de commits que vous voulez dans votre branche. Une fois votre ajout finalisé et testé, faites une **Pull Request** vers `main`.
+
 3. **Pousser les modifications** :
    ```sh
    git push origin feat/ma-branche
    ```
+   **Si le push ne fonctionne pas** : c'est probablement parce que `main` a été mis à jour. Il faut alors **rebase** votre branche sur `main`.
+
+   ```sh
+   git fetch origin
+   git rebase origin/main
+   ```
+   **Si des conflits apparaissent** :
+   - Vérifiez les fichiers en conflit (`git status`)
+   - Modifiez-les pour garder les bonnes modifications
+   - Ajoutez les fichiers corrigés :
+     ```sh
+     git add .
+     ```
+   - Continuez le rebase :
+     ```sh
+     git rebase --continue
+     ```
+   - Poussez à nouveau :
+     ```sh
+     git push origin feat/ma-branche --force
+     ```
+   **Si les conflits sont trop compliqués**, sauvegardez vos modifications ailleurs, créez une nouvelle branche à partir de `main`, recopiez vos changements et poussez la nouvelle branche.
+
 4. **Créer une merge request (Pull Request)** sur GitHub/GitLab.
+   Une fois votre branche fusionnée dans `main`, elle sera supprimée pour éviter les conflits futurs. Ne continuez pas à travailler dessus après la fusion.
+
+### 🔄 Étape de Pipeline
+Lors d'un commit, une **pipeline** est lancée pour vérifier que `mkdocs build` fonctionne sans erreur. 
+- Si la pipeline échoue, consultez les logs.
+- Vous pouvez aussi tester en local :
+  ```sh
+  mkdocs build
+  mkdocs serve
+  ```
+  et voir les erreurs éventuelles.
 
 ---
 
