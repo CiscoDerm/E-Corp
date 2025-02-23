@@ -39,8 +39,8 @@ L'objectif de cette documentation est de détailler la **configuration des VLANs
 ### 🛠️ Étapes de Configuration via l'Interface Web Netgear
 1. 🔗 **Se connecter** à l'interface web du switch : `http://192.168.0.115`
 2. 🔄 **Accéder à** `Switching > VLAN > VLAN Configuration`
-3. ➕ **Créer les VLANs** `2, 3, 4`  
-4. 🖥️ **Attribuer les ports** Aller dans `Switching > VLAN > Vlan jcpquoi`
+3. ➕ **Créer les VLANs** `2 : ADMIN_VLAN, 3 : USER_VLAN, 4 : IT_VLAN`  
+4. 🖥️ **Attribuer les ports** Aller dans `Switching > VLAN >  (Advanced) Port PVID Configuration`
 selon le tableau suivant :
 
 | VLAN | 🔌 **Ports Assignés** |
@@ -49,7 +49,7 @@ selon le tableau suivant :
 | 3 (Users)     | 3,5,7,9,11        |
 | 4 (Services)  | 13,15,17,19,21,23 |
 
-5. 🔄 **Configurer les ports** Aller dans `Switching > VLAN > finir le chemin jcpcquoi` 
+5. 🔄 **Configurer les Membership** Aller dans `Switching > VLAN > (Advanced) VLAN Membership` 
 Pour chaque vlan, mettez les ports en mode `UNTAG` pour les ports attribué, et `TAG` pour le port 1. Mettez rien pour les autres ports.
 6. 💾 **Appliquer la configuration** et effectuer des tests.
 
