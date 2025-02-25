@@ -21,9 +21,9 @@
 ### 🎯 Accéder à la Gestion des Stratégies de Groupe
 1. Ouvrir **"Group Policy Management"** (`gpmc.msc`).
 2. Naviguer jusqu'à l'OU (**Organizational Unit**) cible.
-3. 🖱️ **Clic droit** sur l'OU > **Create a GPO in this domain, and link it here**.
+3. **Clic droit** sur l'OU > **Create a GPO in this domain, and link it here**.
 4. Renseigner le **nom de la GPO**.
-5. 🛠️ **Modifier la GPO** via **Group Policy Management Editor**.
+5. **Modifier la GPO** via **Group Policy Management Editor**.
 
 ### 📂 GPO à Créer et Appliquer
 | 🏷️ GPO | 📌 Groupes Ciblés |
@@ -45,56 +45,56 @@
 
 ## ⚙️ 3. Configuration des GPO Principales au sein de ECORP
 
-### 🔑 **Politique de mot de passe**
+### **Politique de mot de passe**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Windows Settings > Security Settings > Account Policies > Password Policy`
 - **Longueur minimale** : 12 caractères
-- **Complexité requise** : ✅ Oui
+- **Complexité requise** : Oui
 - **Expiration** : 90 jours
 
-### 🔐 **Verrouillage du compte**
+### **Verrouillage du compte**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Windows Settings > Security Settings > Account Lockout Policy`
 - **Tentatives échouées avant verrouillage** : 5
-- **Durée du verrouillage** : 30 minutes
+- **Durée du verrouillage** : 10 minutes
 
-### 🚫 **Restriction installation logiciels**
+### **Restriction installation logiciels**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Installer`
-- **Désactiver Windows Installer** : ✅ Activé (tous sauf **SSI**)
+- **Désactiver Windows Installer** : Activé (tous sauf **SSI**)
 
-### 🔄 **Windows Update obligatoire**
+### **Windows Update obligatoire**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > Windows Components > Windows Update`
-- **Configuration automatique des mises à jour** : ✅ Activé
+- **Configuration automatique des mises à jour** : Activé
 
-### 📦 **Déploiement de logiciel**
+### **Déploiement de logiciel**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Software Settings > Software Installation`
-- **Ajout de packages MSI** : ✅ Appliqué uniquement au groupe **SSI**
+- **Ajout de packages MSI** : Appliqué uniquement au groupe **SSI**
 
-### 📁 **Mappage d'un lecteur réseau**
+### **Mappage d'un lecteur réseau**
 📍 **Chemin GPO** : `User Configuration > Preferences > Windows Settings > Drive Maps`
-- **Ajout d'un lecteur réseau partagé** : ✅ Tous les groupes
+- **Ajout d'un lecteur réseau partagé** : Tous les groupes
 
-### 🚫 **Blocage accès au registre**
+### **Blocage accès au registre**
 📍 **Chemin GPO** : `User Configuration > Policies > Administrative Templates > System`
-- **Empêcher accès Regedit** : ✅ Tous sauf **SSI**
+- **Empêcher accès Regedit** : Tous sauf **SSI**
 
-### ⚙️ **Interdiction accès Panneau de configuration**
+### **Interdiction accès Panneau de configuration**
 📍 **Chemin GPO** : `User Configuration > Policies > Administrative Templates > Control Panel`
-- **Désactiver l'accès au Panneau de configuration** : ✅ Tous sauf **SSI**
+- **Désactiver l'accès au Panneau de configuration** : Tous sauf **SSI**
 
-### 🔌 **Restriction stockage amovible**
+### **Restriction stockage amovible**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > System > Removable Storage Access`
-- **Désactiver accès périphériques USB** : ✅ Tous sauf **SSI**
+- **Désactiver accès périphériques USB** : Tous sauf **SSI**
 
-### 💤 **Mise en veille après 3 minutes d'inactivité**
+### **Mise en veille après 3 minutes d'inactivité**
 📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > System > Power Management > Paramètres de la veille`
-- **Mise en veille après inactivité** : ✅ 3 minutes
+- **Mise en veille après inactivité** : 3 minutes
 
-### 🎨 **Fond d'écran par groupe**
+### **Fond d'écran par groupe**
 📍 **Chemin GPO** : `User Configuration > Policies > Administrative Templates > Desktop > Desktop Wallpaper`
-- **Définir un fond d'écran spécifique par groupe** : ✅ Appliqué individuellement
+- **Définir un fond d'écran spécifique par groupe** : Appliqué individuellement
 
-### 🔒 **Interdiction Invite de commandes et PowerShell**
+### **Interdiction Invite de commandes et PowerShell**
 📍 **Chemin GPO** : `User Configuration > Policies > Administrative Templates > System`
-- **Désactiver l'accès à cmd.exe et PowerShell** : ✅ Tous sauf **SSI**
+- **Désactiver l'accès à cmd.exe et PowerShell** : Tous sauf **SSI**
 
 ---
 
