@@ -85,7 +85,7 @@
 - **Désactiver accès périphériques USB** : ✅ Tous sauf **SSI**
 
 ### 💤 **Mise en veille après 3 minutes d'inactivité**
-📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > System > Power Management`
+📍 **Chemin GPO** : `Computer Configuration > Policies > Administrative Templates > System > Power Management > Paramètres de la veille`
 - **Mise en veille après inactivité** : ✅ 3 minutes
 
 ### 🎨 **Fond d'écran par groupe**
