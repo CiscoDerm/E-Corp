@@ -31,9 +31,9 @@
 5. Cliquer sur **OK**.
 
 ### 📂 Groupes à Créer
-- 👥 **RH** (Ressources Humaines)
-- 💻 **Dev** (Développement)
-- 🔒 **SSI** (Sécurité des Systèmes d'Information)
+- **RH** (Ressources Humaines)
+- **Dev** (Développement)
+- **SSI** (Sécurité des Systèmes d'Information)
 
 ---
 
