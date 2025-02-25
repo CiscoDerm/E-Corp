@@ -20,52 +20,45 @@ L'objectif de cette documentation est de détailler la **configuration des VLANs
 
 | VLAN | 📛 **Nom** | 🌍 **Adresse Réseau** | 📜 **Description** |
 |------|-------------|----------------------|-----------------------------|
-| 10   | **Admin**       | 192.168.2.x/24       | VLAN réservé aux administrateurs réseau |
-| 20   | **Utilisateurs**| 192.168.3.x/24       | VLAN destiné aux utilisateurs standards |
-| 30   | **Services**    | 192.168.4.x/24       | VLAN pour tous les services internes |
-| 40   | **WiFi Users**  | À définir            | VLAN pour les utilisateurs WiFi |
-| 50   | **WiFi Admin**  | À définir            | VLAN pour l'administration WiFi |
+| 2   | **Admin**       | 192.168.2.x/24       | VLAN réservé aux administrateurs réseau |
+| 3   | **Utilisateurs**| 192.168.3.x/24       | VLAN destiné aux utilisateurs standards |
+| 4   | **Services**    | 192.168.4.x/24       | VLAN pour tous les services internes |
+| 5   | **WiFi Admin**  | 192.168.5.x/24       | VLAN pour l'administration WiFi |
+| 6   | **WiFi Users**  | 192.168.5.x/24       | VLAN pour les utilisateurs WiFi |
+
+
+> note : *Wifi Admin and Users is configured with owenWrt*
 
 ---
 
 ## ⚙️ 3. Configuration du Switch Netgear
 
-### 📌 3.1 Attribution Physique des Ports
-- **VLAN ADMIN** : Ports en bas à gauche.
-- **VLAN USERS** : Ports en bas à droite.
-- **VLAN SERVICES** : Ports en haut à droite.
+> *Schéma des attribution des ports selon les VLAN*
+![neatgearvlan](../img/neatgear.png)
 
-### 🛠️ 3.2 Étapes de Configuration via l'Interface Web Netgear
+### 🛠️ Étapes de Configuration via l'Interface Web Netgear
 1. 🔗 **Se connecter** à l'interface web du switch : `http://192.168.0.115`
 2. 🔄 **Accéder à** `Switching > VLAN > VLAN Configuration`
-3. ➕ **Créer les VLANs** `10, 20, 30, 40, 50`
-4. 🖥️ **Attribuer les ports** selon le tableau suivant :
+3. ➕ **Créer les VLANs** `2 : ADMIN_VLAN, 3 : USER_VLAN, 4 : IT_VLAN`  
+4. 🖥️ **Attribuer les ports** Aller dans `Switching > VLAN >  (Advanced) Port PVID Configuration`
+selon le tableau suivant :
 
 | VLAN | 🔌 **Ports Assignés** |
 |------|----------------------|
-| 10 (Admin) | Bas gauche |
-| 20 (Users) | Bas droite |
-| 30 (Services) | Haut droite |
-| 40 (WiFi Users) | À définir |
-| 50 (WiFi Admin) | À définir |
+| 2 (Admin)     | 2,4,6,8,10,12     |
+| 3 (Users)     | 3,5,7,9,11        |
+| 4 (Services)  | 13,15,17,19,21,23 |
 
-5. 🔄 **Configurer les ports** en mode `Access` ou `Trunk` selon les besoins.
+5. 🔄 **Configurer les Membership** Aller dans `Switching > VLAN > (Advanced) VLAN Membership` 
+Pour chaque vlan, mettez les ports en mode `UNTAG` pour les ports attribué, et `TAG` pour le port 1. Mettez rien pour les autres ports.
 6. 💾 **Appliquer la configuration** et effectuer des tests.
 
 ---
 
 ## 🔒 4. Sécurisation des VLANs
 
-- 🔐 **Restreindre l'accès au VLAN Admin (10)** en appliquant des règles ACL.
 - 🛑 **Isoler les VLANs utilisateurs et services** pour éviter le trafic inter-VLAN non autorisé.
-- 🔑 **Activer 802.1X** pour sécuriser les accès aux VLANs sensibles.
 - 🔥 **Configurer un pare-feu** pour filtrer les accès entre VLANs.
-
-📜 **Exemple de règle ACL** pour bloquer l'accès au VLAN Admin depuis le VLAN Utilisateurs :
-```shell
-access-list 100 deny ip 192.168.3.0 0.0.0.255 192.168.2.0 0.0.0.255
-access-list 100 permit ip any any
-```
 
 ---
 
