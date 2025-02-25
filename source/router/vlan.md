@@ -78,16 +78,8 @@ L'objectif de cette documentation est de détailler la **configuration des Inter
 
 ## 🔒 4. Sécurisation des VLANs
 
-- 🔐 **Restreindre l'accès au VLAN Admin (10)** en appliquant des règles ACL.
 - 🛑 **Isoler les VLANs utilisateurs et services** pour éviter le trafic inter-VLAN non autorisé.
-- 🔑 **Activer 802.1X** pour sécuriser les accès aux VLANs sensibles.
 - 🔥 **Configurer un pare-feu** pour filtrer les accès entre VLANs.
-
-📜 **Exemple de règle ACL** pour bloquer l'accès au VLAN Admin depuis le VLAN Utilisateurs :
-```shell
-access-list 100 deny ip 192.168.3.0 0.0.0.255 192.168.2.0 0.0.0.255
-access-list 100 permit ip any any
-```
 
 ---
 
