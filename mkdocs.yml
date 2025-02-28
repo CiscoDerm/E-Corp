@@ -24,14 +24,11 @@ nav:
       - DNS: AD/dns.md
       - NPS (Radius): AD/nps.md
   - Routeur OpenWrt:
-      - Configuration des Interfaces Réseaux: router/config_interface.md
       - Configuration des VLAN: router/vlan.md
       - Règles de Firewall: router/firewall.md
       - Configuration du Wifi: router/wifi.md
   - Switch Netgear:
-      - Configuration des Ports: switch/port.md
       - Configuration des VLAN: switch/vlan.md
-      - Configuration des tags: switch/tag.md
 
 theme:
   name: mkdocs

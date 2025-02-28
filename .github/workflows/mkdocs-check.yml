@@ -30,7 +30,7 @@ jobs:
         id: build
         run: |
           echo "🛠️ Checking MkDocs build..."
-          mkdocs build | tee mkdocs_log.txt || echo "BUILD_FAILED=1" >> $GITHUB_ENV
+          mkdocs build > mkdocs_log.txt 2>&1 || echo "BUILD_FAILED=1" >> $GITHUB_ENV
 
       - name: 📖 Show MkDocs Logs
         run: |
