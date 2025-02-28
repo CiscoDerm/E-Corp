@@ -28,9 +28,7 @@ nav:
       - Règles de Firewall: router/firewall.md
       - Configuration du Wifi: router/wifi.md
   - Switch Netgear:
-      - Configuration des Ports: switch/port.md
       - Configuration des VLAN: switch/vlan.md
-      - Configuration des tags: switch/tag.md
 
 theme:
   name: mkdocs
